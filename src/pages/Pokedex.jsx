@@ -166,7 +166,7 @@ const Pokedex = () => {
           pagesInBlock.map(numberPage => <li onClick={() => setCurrentPage(numberPage)}
            className={`p-3 font-bold 
           text-black rounded-md cursor-pointer border-2
-          ${numberPage === currentPage && "bg-red-600"}`} key={numberPage}>{numberPage}</li>)
+          ${numberPage === currentPage && "bg-red-600 text-white border-red-600"}`} key={numberPage}>{numberPage}</li>)
         }
         {/* Pagina siguiente */}
         <li onClick={handleClickNextPage} className="p-3 bg-red-700 font-bold 
